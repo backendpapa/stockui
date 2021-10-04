@@ -5,10 +5,11 @@
       class="animate__animated animate__fadeIn animate__slower"
       color="#1A1E27"
       dark
+      dense
       
     >
-      <div class="d-flex align-center">
-        
+      <div class="d-flex align-center mt-7">
+        <p class="text-h4 font-weight-bold">Stoc<span class="grey--text">3</span></p>
       </div>
 
       <v-spacer></v-spacer>
@@ -17,10 +18,11 @@
         href="https://github.com/backendpapa"
         target="_blank"
         text
+        
         plain
         icon
       >
-        <v-icon>mdi-github</v-icon>
+        <v-icon size="25">mdi-github</v-icon>
       </v-btn>
     </v-app-bar>
 
