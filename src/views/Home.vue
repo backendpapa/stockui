@@ -15,7 +15,18 @@
       <v-col cols="12" xl="6" lg="6">
         
     <!-- <v-row  no-gutters align="center" justify="center"> -->
-  <v-simple-table dense class="card animate__animated animate__tada"  >
+      <v-row class="animate__animated animate__fadeIn animate__slow" v-if="currency==[]" align="center" justify="center" style="height:30vh">
+          <v-spacer></v-spacer>
+            <div >
+              <p class="text-center"> <v-progress-circular
+      :width="3"
+      color="green"
+      indeterminate
+    ></v-progress-circular></p>
+            </div>
+          <v-spacer></v-spacer>
+      </v-row>
+  <v-simple-table v-else dense class="card animate__animated animate__tada"  >
     <template v-slot:default>
       
       <tbody>
