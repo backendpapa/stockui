@@ -87,7 +87,7 @@ import axios from 'axios';
      
     },
     mounted(){
-      axios.get('http://api.currencylayer.com/live?access_key=a06cfee3d13cdc86331dfd956af98a15&currencies=USD,AUD,CAD,SDG,EUR,CHF,NZD&format=1').then(res=>{
+      axios.get('https://stoc3.herokuapp.com/').then(res=>{
         this.currency=res.data.quotes
       })
     }
